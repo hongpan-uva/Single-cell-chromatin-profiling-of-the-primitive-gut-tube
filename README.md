@@ -65,13 +65,16 @@ code for the bioinformatics analyses of "Single-cell chromatin profiling of the 
 		<td>fig 3F</td>
 		<td>Bulk_data/E16.5/E16.5_KO_peak_classification_barplot.R</td>
  	</tr>
-	<tr>
+	<tr >
 		<td>fig 3H</td>
 		<td>Bulk_data/E18.5/4_get_DEG_associatedWithPeaks.R</td>
  	</tr>
 	<tr>
-		<td>fig 3I</td>
-		<td>/Bulk_data/E18.5/5_David_GO_dotplot_Cdx2KO.R</td>
+		<td rowspan="2">fig 3I</td>
+		<td>Bulk_data/E18.5/5_David_GO_dotplot_Cdx2KO.R</td>
+ 	</tr>
+	<tr>
+   		<td>Bulk_data/E18.5/6_David_GO_dotplot_WT.R</td>
  	</tr>
 	<tr>
 		<td>fig 5A, B</td>
