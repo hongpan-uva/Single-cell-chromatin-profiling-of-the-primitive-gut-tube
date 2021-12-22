@@ -106,37 +106,93 @@ code for the bioinformatics analyses of "Single-cell chromatin profiling of the 
  	</tr>
 	<tr>
 		<td>fig S1D</td>
+		<td>scATAC/scATAC_ArchR_2_recluster.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S2A</td>
 		<td>scATAC/scATAC_ArchR_3_organSpecificGenes&Peaks.R</td>
  	</tr>
 	<tr>
-		<td rowspan="2">fig S1E</td>
+		<td rowspan="2">fig S2B</td>
 		<td>scRNA/scRNA_seurat_pipeline.R</td>
  	</tr>
 	<tr>
 		<td>scATAC/scATAC_ggplot_umap.R</td>
  	</tr>
 	<tr>
-		<td>fig S1F</td>
+		<td>fig S2C</td>
 		<td>scATAC/scATAC_ArchR_1_cluster&integration.R</td>
  	</tr>
 	<tr>
-		<td>fig S2</td>
+		<td>fig S3A</td>
 		<td>scATAC/scATAC_ggplot_umap.R</td>
  	</tr>
 	<tr>
-		<td>fig S3A</td>
+		<td>fig S3B</td>
+		<td>scATAC/scATAC_ArchR_1_cluster&integration.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S3C</td>
+		<td>scATAC/cell_label_percentage_stack_barplot.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S3D</td>
+		<td>scATAC/cell_label_replicate_association_sankey_diagram.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S4</td>
+		<td>Temporal_Analysis/E95_E135_FPKM_barplot.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S5</td>
 		<td>scATAC/E13.5_kmeans_call_DEG.R</td>
  	</tr>
 	<tr>
-		<td>fig S3B, C, D</td>
-		<td>Relative_motif_enrichment_score/motifEnrich_scatterplot_E95E135CrossStages.R</td>
+		<td>fig S6A</td>
+		<td>scATAC/commonPeaks_foregut/3_E95foregut_commonPeaks_composition.R</td>
  	</tr>
 	<tr>
-		<td>fig S3E</td>
-		<td>Relative_motif_enrichment_score/motifEnrich_scatterplot_E135E16CrossStages.R</td>
+		<td>fig S6B</td>
+		<td>scATAC/commonPeaks_foregut/4_E95foregut_commonGenes_composition_byFC.R</td>
  	</tr>
 	<tr>
-		<td>fig S5A</td>
+		<td>fig S7</td>
+		<td>Temporal_Analysis/Relative_motif_enrichment_score/with_expression_data/motifEnrich_scatterplot_E95E135CrossStages_byExpressionlogFC.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S8</td>
+		<td>Temporal_Analysis/Relative_motif_enrichment_score/with_expression_data/motifEnrich_scatterplot_E135E16CrossStages_byExpressionlogFC.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S9A</td>
+		<td>Bulk_data/E16.5/E16.5_KO_peak_classification_heatmap.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S9B</td>
+		<td>scATAC/scATAC_ArchR_5_ChromVar.R</td>
+ 	</tr>
+	<tr>
+		<td>fig S9C</td>
+		<td>Bulk_data/E16.5/E16.5_KO_peak_classification_barplot.R</td>
+ 	</tr>
+	<tr>
+		<td>fig 11A, B</td>
+		<td>TCGA_data_analysis/TCGA_sigGene_GSEA.R</td>
+ 	</tr>
+	<tr>
+		<td>fig 11C, D</td>
+		<td>TCGA_data_analysis/TCGA_sigPeak_GSEA.R</td>
+ 	</tr>
+	<tr>
+		<td>fig 11E</td>
+		<td>TCGA_data_analysis/Bart_result_scatterplot.R</td>
+ 	</tr>
+	<tr>
+		<td>fig 11F</td>
+		<td>TCGA_data_analysis/Bart_result_scatterplot.R</td>
+ 	</tr>
+	<tr>
+		<td>fig 11G</td>
 		<td>TCGA_data_analysis/RP_cdfplot.R</td>
  	</tr>
 </table>
