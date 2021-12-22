@@ -54,16 +54,24 @@ code for the bioinformatics analyses of "Single-cell chromatin profiling of the 
 		<td>Bulk_data/E13.5/E13.5_difPeak_ChIPseq_pattern.R</td>
  	</tr>
 	<tr>
-		<td>fig 3D, G</td>
+		<td>fig 3D</td>
 		<td>Bulk_data/E16.5/E16.5_KO_peak_classification_heatmap.R</td>
  	</tr>
 	<tr>
-		<td>fig 3E, H</td>
+		<td>fig 3E</td>
 		<td>scATAC/scATAC_ArchR_5_ChromVar.R</td>
  	</tr>
 	<tr>
-		<td>fig 3F, I</td>
+		<td>fig 3F</td>
 		<td>Bulk_data/E16.5/E16.5_KO_peak_classification_barplot.R</td>
+ 	</tr>
+	<tr>
+		<td>fig 3H</td>
+		<td>Bulk_data/E18.5/4_get_DEG_associatedWithPeaks.R</td>
+ 	</tr>
+	<tr>
+		<td>fig 3I</td>
+		<td>/Bulk_data/E18.5/5_David_GO_dotplot_Cdx2KO.R</td>
  	</tr>
 	<tr>
 		<td>fig 5A, B</td>
