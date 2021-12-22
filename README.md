@@ -11,19 +11,19 @@ code for the bioinformatics analyses of "Single-cell chromatin profiling of the 
    		<td>scATAC/scATAC_ggplot_umap.R</td>
  	</tr>
 	<tr>
-		<td>fig 1C</td>
-		<td>scATAC/GREAT_GOterm_dotplot.R</td>
- 	</tr>
- 	<tr>
-  		<td>fig 1D</td>
-   		<td>scATAC/Sankey_Diagram.R</td>
- 	</tr>
-	<tr>
-		<td rowspan="2">fig 1E</td>
+		<td rowspan="2">fig 1C</td>
 		<td>scATAC/scATAC_ggplot_umap.R</td>
  	</tr>
  	<tr>
    		<td>scRNA/scRNA_markerGene_expression_boxplot.R</td>
+ 	</tr>
+	<tr>
+		<td>fig 1D</td>
+		<td>scATAC/GREAT_GOterm_dotplot.R</td>
+ 	</tr>
+ 	<tr>
+  		<td>fig 1E</td>
+   		<td>scATAC/Sankey_Diagram.R</td>
  	</tr>
 	<tr>
 		<td>fig 2A</td>
@@ -78,11 +78,11 @@ code for the bioinformatics analyses of "Single-cell chromatin profiling of the 
  	</tr>
 	<tr>
 		<td>fig 5A, B</td>
-		<td>TCGA_data_analysis/TCGA_sigGene_GSEA.R</td>
+		<td>TCGA_data_analysis/TCGA_sigGene_GSEA_refined.R</td>
  	</tr>
 	<tr>
 		<td>fig 5C, D</td>
-		<td>TCGA_data_analysis/TCGA_sigPeak_GSEA.R</td>
+		<td>TCGA_data_analysis/TCGA_sigPeak_GSEA_refined.R</td>
  	</tr>
 	<tr>
 		<td>fig 5E, F, G, H</td>
@@ -90,7 +90,7 @@ code for the bioinformatics analyses of "Single-cell chromatin profiling of the 
  	</tr>
 	<tr>
 		<td>fig 6A</td>
-		<td>TCGA_data_analysis/TCGA_sigGene_GSEA.R</td>
+		<td>TCGA_data_analysis/TCGA_sigGene_GSEA_refined.R</td>
  	</tr>
 	<tr>
 		<td>fig 6B</td>
