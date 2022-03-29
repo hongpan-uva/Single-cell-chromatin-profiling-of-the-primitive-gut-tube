@@ -162,16 +162,21 @@ for(i in 1:4){
 }
 
 library(pheatmap)
-pheatmap(overlap.dat,cellwidth=40,cellheight=40,cluster_cols=F,cluster_rows=F,display_numbers = T,number_format = "%.3f")
+#pheatmap(overlap.dat,cellwidth=40,cellheight=40,cluster_cols=F,cluster_rows=F,display_numbers = T,number_format = "%.3f")
 
 display.dat <- round(overlap.dat,3)
-pdf("oddsRatio_upPeak_upGene_heatmap.pdf")
+#pdf("oddsRatio_upPeak_upGene_heatmap.pdf")
 pheatmap(overlap.norm,cellwidth=40,cellheight=40,cluster_cols=F,cluster_rows=F,display_numbers = display.dat,number_format = "%.3f")
 dev.off()
 
-overlap.gene.norm <- overlap.gene
+pdf("oddsRatio_upPeak_upGene_heatmap_separate.pdf")
 for(i in 1:4){
-    overlap.gene.norm[i,] <- overlap.gene.norm[i,]/max(overlap.gene.norm[i,])
+    #plotslice <- matrix(overlap.dat[i,],ncol=4)
+    plotslice <- data.frame(Association=overlap.dat[i,])
+    colnames(plotslice) <- colnames(overlap.dat)
+    rownames(plotslice) <- rownames(overlap.dat)[i]
+    print(ComplexHeatmap::pheatmap(plotslice,cellwidth=40,cellheight=40,cluster_cols=F,cluster_rows=F, row_names_side = "left",name = "Association"))
 }
+dev.off()
 
-pheatmap(overlap.gene.norm,cellwidth=40,cellheight=40,cluster_cols=F,cluster_rows=F,display_numbers = overlap.gene)
+ComplexHeatmap::pheatmap(overlap.dat,cellwidth=40,cellheight=40,cluster_cols=F,cluster_rows=F)
