@@ -6,7 +6,7 @@ library(networkD3)
 library(htmlwidgets)
 set.seed(1)
 
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 Cdata <- getCellColData(ArchRProj = proj, select = NULL, drop = FALSE)
 
 label1 <- Cdata$superClusters
