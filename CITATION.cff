@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-  - family-names: Zhang
-    given-names: Hongpan
-    orcid: https://orcid.org/0000-0003-0932-176X
+  - family-names: "Zhang"
+    given-names: "Hongpan"
+    orcid: "https://orcid.org/0000-0003-0932-176X"
 title: "Single cell chromatin profiling of the primitive gut tube"
 version: 1.0.1
-doi: DOI: 10.5281/zenodo.6394842
+doi: 10.5281/zenodo.6394842
 date-released: 2022-03-29
 url: "https://github.com/hongpan-uva/Single-cell-chromatin-profiling-of-the-primitive-gut-tube"
