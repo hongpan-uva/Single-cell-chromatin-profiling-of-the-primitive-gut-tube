@@ -1,3 +1,4 @@
+
 #get barcodes of cells in C8 and C9
 library(ArchR)
 set.seed(1)
@@ -121,6 +122,7 @@ for(k in 1:length(keys)){
         colorBy = "GeneScoreMatrix", 
         name = markerGenes, 
         continuousSet = "horizonExtra",
+        
         embedding = "UMAP",
         imputeWeights = getImputeWeights(proj)
     )
@@ -187,7 +189,7 @@ for(i in 1:length(keys)){
 library(ArchR)
 set.seed(1)
 
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 
 #get cluster infomation
 Cdata <- getCellColData(ArchRProj = proj, select = NULL, drop = FALSE)
