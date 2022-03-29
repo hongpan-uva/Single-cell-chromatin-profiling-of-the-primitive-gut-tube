@@ -261,7 +261,7 @@ dev.off()
 #umap by cluster
 library(ArchR)
 set.seed(1)
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 
 Cdata <- getCellColData(ArchRProj = proj, select = NULL, drop = FALSE)
 
@@ -300,7 +300,7 @@ dev.off()
 #umap by supercluster/organ
 library(ArchR)
 set.seed(1)
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 
 Cdata <- getCellColData(ArchRProj = proj, select = NULL, drop = FALSE)
 
