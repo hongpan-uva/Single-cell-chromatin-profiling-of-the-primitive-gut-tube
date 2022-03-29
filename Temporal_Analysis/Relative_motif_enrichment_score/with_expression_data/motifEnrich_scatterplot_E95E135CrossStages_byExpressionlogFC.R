@@ -93,7 +93,10 @@ for(set in 1:4){
     par(mar=c(6,6,6,6))
     plot(t2_use[,2],t2_use[,5],xlab="wilcox_newValue",ylab="Expression log(FC)",type="p",pch=19,cex=.7,col=color.V,main=paste0(filename,datatype),xlim=c(lowlimit-10,uplimit+10))
     labels <- c(min(t2_use$peaks),round((min(t2_use$peaks)+max(t2_use$peaks))/2),max(t2_use$peaks))
-    plotrix::color.legend(360,100,400,250,legend=labels,rect.col=colors,align="rb",gradient="y",cex=0.7)
+    coords <- par("usr")
+    width <- coords[2]-coords[1]
+    height <- coords[4]-coords[3]
+    plotrix::color.legend(coords[2]+width/20,coords[4]-height/4,coords[2]+width/10,coords[4],legend=labels,rect.col=colors,align="rb",gradient="y",cex=0.7)
     for(i in markers){
         text(t2_use[i,2],(t2_use[i,5]+0.2),i,col="black",cex=0.5)
     }
