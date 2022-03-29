@@ -2,7 +2,7 @@
 library(ArchR)
 set.seed(1)
 
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 
 #get cluster infomation
 Cdata <- getCellColData(ArchRProj = proj, select = NULL, drop = FALSE)
