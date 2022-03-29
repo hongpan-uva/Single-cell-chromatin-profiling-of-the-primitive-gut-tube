@@ -38,7 +38,7 @@ doubScores <- addDoubletScores(
 #creating an ArchRproject
 proj <- ArchRProject(
   ArrowFiles = ArrowFiles, 
-  outputDirectory = "HemeTutorial",
+  outputDirectory = "GutProject",
   copyArrows = TRUE #This is recommened so that you maintain an unaltered copy for later usage.
 )
 
@@ -47,10 +47,10 @@ getAvailableMatrices(proj)
 proj <- filterDoublets(ArchRProj = proj)
 
 #save and load ArchRporject
-#To easily save an ArchRProject for later use or for sharing with collaborators, we use the saveArchRProject() function. This copies the current ArchRProject object and all of the Arrow files to a specified directory. If we don’t specify an output directory (as below), saveArchRProject() uses the output directory that we specified upon creation of our ArchRProject. In this case that is the folder “HemeTutorial”.
+#To easily save an ArchRProject for later use or for sharing with collaborators, we use the saveArchRProject() function. This copies the current ArchRProject object and all of the Arrow files to a specified directory. If we don’t specify an output directory (as below), saveArchRProject() uses the output directory that we specified upon creation of our ArchRProject. In this case that is the folder “GutProject”.
 proj <- saveArchRProject(ArchRProj = proj)
 #When we are ready to load this saved ArchRProject we use the loadArchRProject() object and provide the path to the folder containing the saved ArchRProject object.
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 
 
 #LSI dimensionality reduction
