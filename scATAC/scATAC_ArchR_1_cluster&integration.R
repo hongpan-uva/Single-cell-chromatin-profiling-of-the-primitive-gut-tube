@@ -116,7 +116,7 @@ dev.off()
 #(Integration) define cluster identifed with scRNA-seq
 library(ArchR)
 set.seed(1)
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 
 Cdata <- getCellColData(ArchRProj = proj, select = NULL, drop = FALSE)
 
