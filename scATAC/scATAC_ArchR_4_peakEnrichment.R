@@ -2,7 +2,7 @@
 #read in organ-specific peaks (marker peaks) defined before
 library(ArchR)
 set.seed(1)
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 markersPeaks<-readRDS("markerPeak/markerPeak_7organs/markersPeaks_bysuperClusters.rds")
 
 #read in E13.5 organ-specific peaks
@@ -39,12 +39,25 @@ dev.off()
 #normalize for visualization
 plotdat<-t(mlog10Padj)
 plotdat <- plotdat[c("intestine","pancreas","stomach","lung","liver","pharynx","esophagus"),]
+plotdat <- plotdat[,c("intestine_specificPeak","pancreas_specificPeak","stomach_specificPeak","lung_specificPeak")]
+colnames(plotdat) <- c("intestine","pancreas","stomach","lung")
 plotdat.norm <- plotdat
 for(i in 1:ncol(plotdat.norm)){
     plotdat.norm[,i] <- plotdat.norm[,i]/max(plotdat.norm[,i])
 }
 
+#plot as one heatmap
 library(pheatmap)
 pdf("markerPeak/markerPeak_7organs/customePeak4_heatmap2_bysuperCluster.pdf")
 pheatmap(plotdat.norm,breaks=seq(0,1,length.out=101),color=colorRampPalette(colors = c("#E6E7E8","#3A97FF","#8816A7","black"))(100),display_numbers = round(plotdat,2),cluster_rows=F,cluster_cols=F)
+dev.off()
+
+#plot as separate heatmaps
+pdf("markerPeak/markerPeak_7organs/customePeak4_heatmap2_bysuperCluster_separate.pdf")
+for(i in 1:ncol(plotdat)){
+    plotslice <- matrix(plotdat[,i],ncol=1)
+    colnames(plotslice) <- colnames(plotdat)[i]
+    rownames(plotslice) <- rownames(plotdat)
+    print(ComplexHeatmap::pheatmap(plotslice,breaks=seq(0,max(plotslice),length.out=101),color=colorRampPalette(colors = c("#E6E7E8","#3A97FF","#8816A7","black"))(100),cluster_rows=F,cluster_cols=F,cellheight=40,cellwidth=40,row_names_side = "left",name="Enrichment"))
+}
 dev.off()
