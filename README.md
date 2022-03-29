@@ -77,26 +77,6 @@ code for the bioinformatics analyses of "Single-cell chromatin profiling of the 
    		<td>Bulk_data/E18.5/6_David_GO_dotplot_WT.R</td>
  	</tr>
 	<tr>
-		<td>fig 5A, B</td>
-		<td>TCGA_data_analysis/TCGA_sigGene_GSEA_refined.R</td>
- 	</tr>
-	<tr>
-		<td>fig 5C, D</td>
-		<td>TCGA_data_analysis/TCGA_sigPeak_GSEA_refined.R</td>
- 	</tr>
-	<tr>
-		<td>fig 5E, F, G, H</td>
-		<td>TCGA_data_analysis/Bart_result_scatterplot.R</td>
- 	</tr>
-	<tr>
-		<td>fig 6A</td>
-		<td>TCGA_data_analysis/TCGA_sigGene_GSEA_refined.R</td>
- 	</tr>
-	<tr>
-		<td>fig 6B</td>
-		<td>TCGA_data_analysis/RP_cdfplot.R</td>
- 	</tr>
-	<tr>
 		<td>fig S1B</td>
 		<td>scATAC/cell_ranger_ATAC.sh</td>
  	</tr>
@@ -174,25 +154,5 @@ code for the bioinformatics analyses of "Single-cell chromatin profiling of the 
 	<tr>
 		<td>fig S9C</td>
 		<td>Bulk_data/E16.5/E16.5_KO_peak_classification_barplot.R</td>
- 	</tr>
-	<tr>
-		<td>fig 11A, B</td>
-		<td>TCGA_data_analysis/TCGA_sigGene_GSEA.R</td>
- 	</tr>
-	<tr>
-		<td>fig 11C, D</td>
-		<td>TCGA_data_analysis/TCGA_sigPeak_GSEA.R</td>
- 	</tr>
-	<tr>
-		<td>fig 11E</td>
-		<td>TCGA_data_analysis/Bart_result_scatterplot.R</td>
- 	</tr>
-	<tr>
-		<td>fig 11F</td>
-		<td>TCGA_data_analysis/Bart_result_scatterplot.R</td>
- 	</tr>
-	<tr>
-		<td>fig 11G</td>
-		<td>TCGA_data_analysis/RP_cdfplot.R</td>
  	</tr>
 </table>
