@@ -1,6 +1,6 @@
 library(ArchR)
 set.seed(1)
-proj <- loadArchRProject(path = "HemeTutorial")
+proj <- loadArchRProject(path = "GutProject")
 
 #get umap coordinates
 umapmat <- getEmbedding(ArchRProj = proj, embedding = "UMAP", returnDF = TRUE)
